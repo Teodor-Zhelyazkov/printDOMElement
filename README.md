@@ -50,7 +50,6 @@ new printDOMElement({
     metadata  : [
         "<title>Print Dom Element</title>",
         '<script onload="" src="https://code.jquery.com/jquery-1.12.4.js"><\/script>',
-        '<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />',
         '<meta charset="utf-8">',
         `<style>.. <\/style>`,
         `<script>.. <\/script>`
