@@ -140,17 +140,6 @@
     }
 
     /**
-    *	@private @method printing
-    *   @param {rotate|Object}
-    *
-    *	@return {Function}
-    */
-    function printing( $callBack = null )
-    {
-        console.log($this);
-    }
-
-    /**
     *	@private @method initMetaDataObject
     *   @param {printDOMElement|Object}
     *
