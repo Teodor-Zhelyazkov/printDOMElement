@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="printDOMElement.js"></script>
 
-
+<!--  -->
         <style id = "page_styles">
             * {
                 box-sizing: border-box;
@@ -123,7 +123,6 @@
 
             var t = new printDOMElement({
                 selector  : '#element_to_print',
-                // selector  : 'header',
                 // autoPrint : false,
                 delay     : 4,
                 metadata  : [
@@ -140,6 +139,18 @@
                 ],
                 beforePrint : function () {
                     console.log('beforee e e print ');
+
+                    /***
+                    *    "this" represents printDOMElement object
+                    *    printDOMElement @property'es :
+                    *
+                    *    @property iFrame     : {HTMLElement};
+                    *    @property iFrameWIN  : {Window};
+                    *    @property iFrameDOC  : {Document};
+                    *
+                    *    @example :
+                    *    this.iFrame, this.iFrameWIN, this.iFrameDOC
+                    */
                 },
                 afterPrint : function () {
                     console.log('afterrrr print ');
