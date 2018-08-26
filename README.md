@@ -39,7 +39,7 @@ Delay printing with two seconds
 ```
 new printDOMElement({
     selector  : '#element_to_print',
-    delay     : 2 
+    delay     : 2
 });
 ```
 
@@ -87,7 +87,17 @@ new printDOMElement({
     metadata  : [],
     beforePrint : function ()
     {
-
+        /***
+        *    "this" represents printDOMElement object
+        *    printDOMElement @property'es :
+        *
+        *    @property iFrame     : {HTMLElement};
+        *    @property iFrameWIN  : {Window};
+        *    @property iFrameDOC  : {Document};
+        *   
+        *    @example :
+        *    this.iFrame, this.iFrameWIN, this.iFrameDOC
+        */
     },
     afterPrint : function ()
     {
