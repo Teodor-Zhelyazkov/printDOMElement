@@ -65,19 +65,7 @@ new printDOMElement({
                 },2000)
             })
         <\/script>`
-    ],
-    beforePrint : function () 
-    {
-        
-    },
-    afterPrint : function () 
-    {
-
-    },
-    onError : function (e) 
-    {
-        console.log(e);
-    }
+    ]
 });
 ```
 
