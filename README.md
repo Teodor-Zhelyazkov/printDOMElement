@@ -48,3 +48,25 @@ new printDOMElement({
     ]
 });
 ```
+
+Full config object with Defaults 
+```
+new printDOMElement({
+    selector  : '#element_to_print',
+    autoPrint : true, 
+    delay     : 0,  
+    metadata  : [],
+    beforePrint : function () 
+    {
+
+    },
+    afterPrint : function () 
+    {
+
+    },
+    onError : function (e) 
+    {
+        console.log(e);
+    }
+});
+```
