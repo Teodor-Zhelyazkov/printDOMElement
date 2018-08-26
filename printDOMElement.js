@@ -90,19 +90,8 @@
             return false;
         }
 
-        console.log($printDOMElement.element.innerHTML);
-
         /** Init @class @property "delay" **/
         $printDOMElement.options.delay   = $printDOMElement.options.delay * 1000;
-
-        // /** Check if there is HTMLElement for the given #selector **/
-        // if( !$printDOMElement.element )
-        // {
-        //     var errorMessage = "There is no HTMLElement with the given selector : '"+$printDOMElement.options.selector+"'";
-        //     $printDOMElement.options.onError.call($printDOMElement, errorMessage);
-        //
-        //     return false;
-        // }
 
         /** Push to @private @property "printDOMElementObjects" **/
         printDOMElementObjects[$printDOMElement.instanceId] = $printDOMElement;
