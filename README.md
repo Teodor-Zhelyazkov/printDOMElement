@@ -34,6 +34,15 @@ new printDOMElement({
 });
 ```
 
+Delay printing with two seconds
+
+```
+new printDOMElement({
+    selector  : '#element_to_print',
+    delay     : 2 
+});
+```
+
 Add metdata to iframe before printing
 ```
 new printDOMElement({
