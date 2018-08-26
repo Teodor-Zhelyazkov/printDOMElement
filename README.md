@@ -1,9 +1,9 @@
 # printDOMElement
-Print contents of a div, htmlelement
+Print contents of a div, htmlelement.PrintDOMElement is pure javascript plugin which prints the contents of html elements. Basically what it does is build an <iframe> write the contents of html element and trigger the print .
 
 ### Installing
 
-Clone repo, or download printDOMElement.js 
+Clone repo, or download printDOMElement.js
 
 ```
 git clone https://github.com/Teodor-Zhelyazkov/printDOMElement.git
@@ -13,7 +13,7 @@ git clone https://github.com/Teodor-Zhelyazkov/printDOMElement.git
 
 ## Getting Started
 
-Add "printDOMElement.js" to your page 
+Add "printDOMElement.js" to your page
 
 ```
 <!DOCTYPE html>
@@ -49,7 +49,7 @@ new printDOMElement({
 });
 ```
 
-Trigger print manually 
+Trigger print manually
 ```
 new printDOMElement({
     selector  : '#element_to_print',
@@ -69,22 +69,22 @@ new printDOMElement({
 });
 ```
 
-Full config object with Defaults 
+Full config object with Defaults
 ```
 new printDOMElement({
     selector  : '#element_to_print',
-    autoPrint : true, 
+    autoPrint : true,
     delay     : 0,  
     metadata  : [],
-    beforePrint : function () 
+    beforePrint : function ()
     {
 
     },
-    afterPrint : function () 
+    afterPrint : function ()
     {
 
     },
-    onError : function (e) 
+    onError : function (e)
     {
         console.log(e);
     }
