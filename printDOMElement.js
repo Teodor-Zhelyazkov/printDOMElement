@@ -111,22 +111,21 @@
             $printDOMElement.iFrameDOC = $printDOMElement.iFrame.contentDocument;
             $printDOMElement.iFrameWIN = $printDOMElement.iFrame.contentWindow;
 
-            // try
-            // {
+            try
+            {
                 /** assign metadata && content to document **/
                 $printDOMElement.iFrameDOC.open();
                 $printDOMElement.iFrameDOC.write(meta);
                 $printDOMElement.iFrameDOC.write($printDOMElement.element.innerHTML);
                 $printDOMElement.iFrameDOC.close();
-            // }
-            // catch (e)
-            // {
-                // TODO delete iframe
-                // $printDOMElement.iFrame.remove();
+            }
+            catch (e)
+            {
+                $printDOMElement.iFrame.remove();
 
-                // $printDOMElement.options.onError.call($printDOMElement, e);
-                // return false;
-            // }
+                $printDOMElement.options.onError.call($printDOMElement, e);
+                return false;
+            }
 
             /** trigger printing **/
             if( $printDOMElement.options.autoPrint )
