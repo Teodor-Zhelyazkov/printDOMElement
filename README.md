@@ -26,7 +26,7 @@ Add "printDOMElement.js" to your page
 
 ## Examples
 
-### Basic usage
+Basic usage
 
 ```
 new printDOMElement({
@@ -34,7 +34,7 @@ new printDOMElement({
 });
 ```
 
-### Add metdata to iframe before printing
+Add metdata to iframe before printing
 ```
 new printDOMElement({
     selector  : '#element_to_print',
