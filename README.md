@@ -49,6 +49,38 @@ new printDOMElement({
 });
 ```
 
+Trigger print manually 
+```
+new printDOMElement({
+    selector  : '#element_to_print',
+    autoPrint : false, // Default : true
+    metadata  : [
+        <!-- Add jQuery -->
+        '<script onload="" src="https://code.jquery.com/jquery-1.12.4.js"><\/script>',
+        `<script>
+            $(document).ready(function () {
+                /** After your work did finish trigger print manually **/
+                setTimeout(function () {
+                    window.print();
+                },2000)
+            })
+        <\/script>`
+    ],
+    beforePrint : function () 
+    {
+        
+    },
+    afterPrint : function () 
+    {
+
+    },
+    onError : function (e) 
+    {
+        console.log(e);
+    }
+});
+```
+
 Full config object with Defaults 
 ```
 new printDOMElement({
