@@ -24,7 +24,17 @@ Add "printDOMElement.js" to your page
 ..
 ```
 
-## Example 
+## Examples
+
+### Basic usage
+
+```
+new printDOMElement({
+    selector  : '#element_to_print'
+});
+```
+
+### Add metdata to iframe before printing
 ```
 new printDOMElement({
     selector  : '#element_to_print',
@@ -35,15 +45,6 @@ new printDOMElement({
         '<meta charset="utf-8">',
         `<style>.. </style>`,
         `<script>.. </script>`
-    ],
-    beforePrint : function () {
-        
-    },
-    afterPrint : function () {
-        
-    },
-    onError : function (e) {
-        console.log(e);
-    }
+    ]
 });
 ```
