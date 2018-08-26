@@ -23,3 +23,27 @@ Add "printDOMElement.js" to your page
     ..
 ..
 ```
+
+## Example 
+```
+new printDOMElement({
+    selector  : '#element_to_print',
+    metadata  : [
+        "<title>Print Dom Element</title>",
+        '<script onload="" src="https://code.jquery.com/jquery-1.12.4.js"><\/script>',
+        '<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />',
+        '<meta charset="utf-8">',
+        ` <style>.. </style>`,
+        ` <script>.. </script>`,
+    ],
+    beforePrint : function () {
+        
+    },
+    afterPrint : function () {
+        
+    },
+    onError : function (e) {
+        console.log(e);
+    }
+});
+```
